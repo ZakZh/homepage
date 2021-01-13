@@ -6,11 +6,17 @@
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
   </head>
   <body>
-    <main style="background: #200122; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #200122, #6f0000); /* Chrome 10-25, Safari 5.1-6 */
+    <main style="background: #200122;
+  background: -webkit-linear-gradient(to right, #200122, #6f0000);
   background: linear-gradient(to right, #200122, #6f0000); ">
       <article>
-        <div class="page" style="border-color: midnightblue; background-image: url(https://cdn.pixabay.com/photo/2016/09/10/13/34/vintage-1659117_960_720.jpg);">
+        <div class="page"
+        style="border-color: rgb(100, 7, 7);
+          background-image: url(https://cdn.pixabay.com/photo/2016/12/18/02/35/paper-1914901_960_720.jpg); -moz-background-size: 100%;
+          -webkit-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;"
+        >
           <!-- Content -->
           <div class="stackable grid">
             <div class="row">
@@ -101,7 +107,10 @@
                         </ul>
                       </div>
                   </li>
-                  <hr>
+                  <hr style="border: none; /* Убираем границу для браузера Firefox */
+    color: rgb(121, 3, 3); /* Цвет линии для остальных браузеров */
+    background-color: rgb(124, 1, 1); /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */">
                   <li class="details">
                       <input type="checkbox" id="history">
                       <label for="history" class="summary"> <h4>My history</h4> </label>
