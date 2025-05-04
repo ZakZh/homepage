@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .fv {
@@ -51,7 +52,8 @@ body {
 
 @media screen and (max-width: 576px) {
     .main-info,
-    .contact_info_container {
+    .contact_info_container,
+    .fh {
         flex-direction: column;
     }
 
@@ -66,10 +68,13 @@ body {
     .experiences {
         margin-right: 0;
     }
+
+    .fh {
+        gap: 0;
+    }
 }
 
 /* Contact info styles */
-
 .contact-info__header,
 .contact-info__sub-header {
     text-align: center;
@@ -257,11 +262,37 @@ body {
 }
 
 .additional-info__languages-header {
-    color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
+    color: var(--primary-text-color);
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: var(--text-decoration-color);
+    letter-spacing: 1px;
 }
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.additional-info__certifications,
+.additional-info__values {
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    flex: 1 1 50%;
+}
+
+.certifications__list {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.certifications__list li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+    line-height: 1.6;
+    color: var(--secondary-text-color);
+    font-size: 1rem;
 }
